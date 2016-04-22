@@ -9,7 +9,6 @@ var {
 
 import BaseComponent from './BaseComponent'
 import Utils from './Utils'
-import Spinner from 'react-native-loading-spinner-overlay';
 
 import styles from './styles'
 
@@ -141,7 +140,6 @@ class WebBrowser extends BaseComponent {
                     scalesPageToFit={this.state.scalesPageToFit}
                 />
                 {this.renderToolbar()}
-                <Spinner visible={this.state.loading} />
             </View>
         );
     }
