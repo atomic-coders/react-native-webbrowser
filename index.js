@@ -20,6 +20,7 @@ const WEBVIEW_REF = 'webview';
 
 const propTypes = {
     url: PropTypes.string,
+    headers: PropTypes.object,
     hideToolbar: PropTypes.bool,
     hideAddressBar: PropTypes.bool,
     hideStatusBar: PropTypes.bool,
@@ -130,7 +131,7 @@ class WebBrowser extends BaseComponent {
                     ref={WEBVIEW_REF}
                     automaticallyAdjustContentInsets={false}
                     style={styles.webView}
-                    source={{uri: this.state.url}}
+                    source={{uri: this.state.url, headers: this.props.headers}}
                     javaScriptEnabled={true}
                     domStorageEnabled={true}
                     decelerationRate="normal"
