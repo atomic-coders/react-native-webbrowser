@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const HEADER = '#3b5998';
 const BGWASH = 'rgba(255,255,255,0.8)';
+const BGWHITE = 'white'
 const ELEMENT_MARGIN = 8;
 const SHADOW_COLOR = '#333';
 const SHADOW_OPACITY = 0.4;
@@ -29,7 +30,7 @@ export default StyleSheet.create({
         marginRight: ELEMENT_MARGIN,
     },
     webView: {
-        backgroundColor: BGWASH,
+        backgroundColor: BGWHITE,
         height: 350,
     },
     addressBarTextInput: {
