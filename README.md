@@ -18,7 +18,7 @@ class SampleApp extends Component {
         return (
             <View style={{paddingTop:20, flex:1}}>
             
-                <Webbrowser
+                <WebBrowser
                     url="https://your-url.com"
                     hideHomeButton={false}
                     hideToolbar={false}

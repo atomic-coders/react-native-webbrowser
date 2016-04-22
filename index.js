@@ -43,7 +43,7 @@ const defaultProps = {
     onShouldStartLoadWithRequest: ()=>true,
 }
 
-class Webbrowser extends BaseComponent {
+class WebBrowser extends BaseComponent {
 
     constructor(props) {
         super(props);
@@ -187,7 +187,7 @@ class Webbrowser extends BaseComponent {
     }
 };
 
-Webbrowser.propTypes = propTypes;
-Webbrowser.defaultProps = defaultProps;
+WebBrowser.propTypes = propTypes;
+WebBrowser.defaultProps = defaultProps;
 
-export default Webbrowser;
+export default WebBrowser;
